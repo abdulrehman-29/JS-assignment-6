@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    background-image: url("./img/hero-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    display: flex;
+    height: 100vh;
+}
+
+img {
+    width: 43px;
+    border-radius: 50%;
+}
+
+nav {
+    width: 300px;
+    background: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(10px);
+    border-right: 1px solid #334155;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    overflow-y: auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text-main);
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+button {
+    background: transparent;
+    border: 1px solid transparent;
+    color: var(--text-dim);
+    padding: 12px 16px;
+    text-align: left;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.95rem;
+}
+
+main {
+    flex: 1;
+    padding: 40px 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+}
+
+button:hover {
+    background: rgba(106, 107, 145, 0.1);
+    color: var(--primary);
+    border-color: rgba(167, 168, 240, 0.2);
+}
+
+button.active {
+    background: var(--primary);
+    color: white;
+}
+
+nav {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(17px);
+    border-right: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+button,
+.logo {
+    color: #111;
+    font-weight: 500;
+}
+
+.terminal {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(17px);
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 6px;
+    padding: 25px;
+    overflow-y: auto;
+}
+
+.img1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 5px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid;
+}
+
+.logo {
+
+    font-weight: 600;
+    font-size: 1.15rem;
+    margin-left: 15px;
+}
+
+.terminal h2 {
+    font-size: 35px;
+    color: #111;
+}
+
+.terminal h3{
+    font-weight: 500;
+}
+
+/* nav {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+nav::-webkit-scrollbar {
+    width: 6px;
+}
+
+nav::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+nav::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+nav::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+nav {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.25) transparent;
+} */
+
+@media only screen and (max-width:950px){
+nav{
+    width: 220px;
+}main{
+    padding: 30px;
+}
+}
+
+@media only screen and (max-width:600px) {
+    main {
+        padding: 25px 18px;
+        gap: 18px;
+    }
+
+    nav {
+        padding: 14px;
+        width: 135px;
+    }
+
+    nav .logo p {
+        font-size: 11px;
+    }
+
+    nav .nav-group button {
+        font-size: 9px;
+        padding: 12px 5px;
+        width: 100px;
+    }
+
+    img {
+        width: 30px;
+    }
+
+    .terminal {
+        padding: 17px;
+        font-size: 10px;
+        border-radius: 7px;
+    }
+
+    .terminal h2 {
+        font-size: 12px;
+    }
+
+    img {
+        width: 25px;
+    }
+/* 
+    nav {
+        -webkit-overflow-scrolling: touch;
+    } */
+}
