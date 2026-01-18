@@ -53,7 +53,7 @@ function q8() {
     var message = "Ali and Sami are best friends. They play cricket and football together.";
     var newMessage = message.replaceAll("and", "&")
 
-    document.write("<b>City: </b>" + message + "<br><br>");
+    document.write("<b>Sentence: </b>" + message + "<br><br>");
     document.write("<b>After replacement: </b>" + newMessage);
 }
 
@@ -61,7 +61,7 @@ function q9() {
     var string = "472";
     var number = Number(string);
 
-    document.write("Value: " + string + "<br>Type: " + typeof (string) + "<br><br>");
+    document.write("Value: '" + string + "'<br>Type: " + typeof (string) + "<br><br>");
     document.write("Value: " + number + "<br>Type: " + typeof (number));
 }
 
@@ -187,4 +187,5 @@ function q18() {
 
     document.write("Text: " + sentence + "<br><br>");
     document.write("There are " + count + " occurrence(s) of word 'the'.");
+
 }
