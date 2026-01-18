@@ -136,38 +136,11 @@ button,
     font-weight: 500;
 }
 
-/* nav {
-    height: 100vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-}
-
-nav::-webkit-scrollbar {
-    width: 6px;
-}
-
-nav::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-nav::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-}
-
-nav::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-nav {
-    scrollbar-width: thin;
-    scrollbar-color: rgba(0, 0, 0, 0.25) transparent;
-} */
-
 @media only screen and (max-width:950px){
-nav{
+    nav{
     width: 220px;
-}main{
+}
+    main{
     padding: 30px;
 }
 }
@@ -210,8 +183,4 @@ nav{
     img {
         width: 25px;
     }
-/* 
-    nav {
-        -webkit-overflow-scrolling: touch;
-    } */
 }
